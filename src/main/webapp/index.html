@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Open Sans';
+            background-color: #faf0ff;
+        }
+        form {
+            padding: 1rem;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > button {
+                width: 8%;
+                border: black 1;
+                border-radius: 0.5rem;
+                padding: 0.4rem;
+            }
+        }
+        input {
+            margin: 0.6rem;
+            padding: 0.6rem;
+            border: black 1;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Sample Form</i></h1>
+    <form action="ServletMiddlewareToAdd" method="post">
+        <label>
+            <input type="text" name="username" placeholder="Enter your name" />
+        </label>
+        <label>
+            <input type="number" name="phone_number" placeholder="Enter a phone number" />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <div name="output" id="output_box"></div>
+</body>
+</html>
