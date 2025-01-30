@@ -30,6 +30,8 @@ Directory structure:
 └── avidhanr-servletsusingmaven/
     ├── README.md
     ├── pom.xml
+    ├── .prettierignore
+    ├── .prettierrc
     ├── src/
     │   └── main/
     │       ├── java/
