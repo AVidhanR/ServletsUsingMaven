@@ -20,5 +20,39 @@
     </dependency>
 ```
 
-- This is a template to create a `Servlet` using `Maven` in `IntelliJ IDE`.
+> [!IMPORTANT]
+> - This is a template to create a `Servlet` using `Maven` in `IntelliJ IDE`.
+> - One can create either an `HTML` or a `JSP` file under the `webapp` directory.
+> - Below is the directory structure of the project. Check for the `src` and `webapp` directories to create the `Servlet` and (`HTML` or `JSP`) files respectively.
+
+```txt
+Directory structure:
+└── avidhanr-servletsusingmaven/
+    ├── README.md
+    ├── pom.xml
+    ├── src/
+    │   └── main/
+    │       ├── java/
+    │       │   └── com/
+    │       │       └── itsvidhanreddy/
+    │       │           └── ServletMiddlewareToAddData.java
+    │       └── webapp/
+    │           ├── index.html
+    │           └── WEB-INF/
+    │               └── web.xml
+    └── .smarttomcat/
+        └── ServletsUsingMaven/
+            └── conf/
+                ├── catalina.policy
+                ├── catalina.properties
+                ├── context.xml
+                ├── jaspic-providers.xml
+                ├── jaspic-providers.xsd
+                ├── logging.properties
+                ├── server.xml
+                ├── tomcat-users.xml
+                ├── tomcat-users.xsd
+                └── web.xml
+```
+
 - Created and maintained by, [$$AVidhanR$$](https://linkedin.com/in/AVidhanR)
