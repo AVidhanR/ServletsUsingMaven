@@ -59,4 +59,4 @@ Directory structure:
 
 > Coming soon...
 
-- Created and maintained by, [_AVidhanR_](https://linkedin.com/in/AVidhanR)
+- Created and maintained by [_AVidhanR_](https://linkedin.com/in/AVidhanR)
