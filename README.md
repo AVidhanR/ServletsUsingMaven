@@ -55,4 +55,8 @@ Directory structure:
                 └── web.xml
 ```
 
+## Project Startup process
+
+> Coming soon...
+
 - Created and maintained by, [$$AVidhanR$$](https://linkedin.com/in/AVidhanR)
