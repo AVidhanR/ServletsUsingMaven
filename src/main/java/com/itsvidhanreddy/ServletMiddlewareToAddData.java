@@ -7,13 +7,30 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class ServletMiddlewareToAddData extends HttpServlet {
-  public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
-    String name = req.getParameter("username");
-    int num = Integer.parseInt(req.getParameter("phone_number"));
+  public void doPost(HttpServletRequest req, HttpServletResponse res) {
 
-    PrintWriter pw = res.getWriter();
-    pw.println("The username: " + name + " and the phone number: " + num);
+    try {
+      PrintWriter pw = res.getWriter();
+      try {
+        String firstName = req.getParameter("first_name");
+        String lastName = req.getParameter("last_name");
+        String phoneNumberLength = req.getParameter("phone_number");
 
-    pw.close();
+        if (phoneNumberLength.length() > 10) {
+          throw new RuntimeException("Phone number limit exceeded 10 digits, which is not acceptable");
+        }
+
+        pw.println("The First Name is " + firstName + ",\nLast Name is " + lastName +
+            "\nwith Phone Number: " + req.getParameter("phone_number"));
+
+      } catch (NumberFormatException e) {
+        pw.println("Something went wrong: " + e.getMessage());
+      } finally {
+        pw.close();
+      }
+    } catch (IOException e) {
+      System.out.println("Something went wrong: " + e.getMessage());
+    }
+
   }
 }
