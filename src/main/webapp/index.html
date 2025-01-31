@@ -34,10 +34,13 @@
     <h1><i>Sample Form</i></h1>
     <form action="ServletMiddlewareToAdd" method="post">
         <label>
-            <input type="text" name="username" placeholder="Enter your name" />
+            <input type="text" name="first_name" placeholder="Enter your first name" />
         </label>
         <label>
-            <input type="number" name="phone_number" placeholder="Enter a phone number" />
+            <input type="text" name="last_name" placeholder="Enter a last name" />
+        </label>
+        <label>
+            <input type="number" name="phone_number" placeholder="Enter your phone number" maxlength="10" />
         </label>
         <button type="submit">Submit</button>
     </form>
