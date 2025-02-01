@@ -60,5 +60,7 @@ Directory structure:
 ## Project Startup process
 
 - Step 1: Install the latest `Apache Tomcat 11.x` from the [official]() site. And regarding the version, it can also be a `Apache Tomcat 10.x`
+- Step 2: Create a Java project under `maven Archetype`
+- Step 3: 
 
 - Created and maintained by [_AVidhanR_](https://linkedin.com/in/AVidhanR)
